@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/common.css">
+    <script src="/script/script.js"></script>
+    <style>
+        .M_nav{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255,255,255,0.8);
+            overflow: hidden;
+            display: none;
+        }
+        .open{
+            display: block;
+        }
+        .M_toggle{
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            z-index: 101;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            background: url("/img/menu-btn_close.svg");
+        }
+        .M_submenu{
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .M_submenu li{
+            text-align: center;
+            display: block;
+            font-family: 'Gmarketsansmedium';
+            font-size: 2.5rem;
+            line-height: 2.3;
+        }
+        .M_submenu li a{
+            display: block;
+            transition: 0.3s;
+        }
+        .M_submenu li a:hover{
+            color: rgba(255, 218, 85, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="M_toggle"></div>
+    <div class="M_nav">
+        <ul class="M_submenu">
+            <li><a href="#aa">TOP</a></li>
+            <li><a href="#bb">ABOUT</a></li>
+            <li><a href="#cc">STORY</a></li>
+            <li><a href="#dd">MENU</a></li>
+            <li><a href="#ee">STORE</a></li>
+        </ul>
+    </div>
+    <script>
+	</script>
+</body>
+</html>

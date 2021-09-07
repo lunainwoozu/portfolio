@@ -402,7 +402,9 @@ Animation keyframes
 
 <script>
     
-    let overlay_navigation = $('.overlay-navigation');
+    $(document).ready(function(){
+        
+        let overlay_navigation = $('.overlay-navigation');
     let nav_item_1 = $('nav li:nth-of-type(1)');
     let nav_item_2 = $('nav li:nth-of-type(2)');
     let nav_item_3 = $('nav li:nth-of-type(3)');
@@ -411,8 +413,6 @@ Animation keyframes
     let top_bar = $('.bar-top');
     let middle_bar = $('.bar-middle');
     let bottom_bar = $('.bar-bottom');
-    
-    $(document).ready(function(){
         $('.open-overlay').click(function() {
   
   overlay_navigation.toggleClass('overlay-active');

@@ -1069,7 +1069,9 @@ height: 29px;}
 	color: #fff;
 }
     
-
+.Mbox{
+    display: none;
+}
 .section03{
     margin: 0 auto 20rem;
 }
@@ -1235,12 +1237,12 @@ height: 29px;}
 }
     
 .section02{
-     margin-bottom: 1rem;
+    margin-bottom: 10rem;
 }
     
 
 .section03{
-    margin-bottom: 10rem;
+    
 }
 .section03 .mlist{
     margin: auto;
@@ -1249,11 +1251,12 @@ height: 29px;}
     
 .section04{
     height: 100%;
-    margin-bottom: 0;
+    margin-bottom: 5rem;
 }
-    .Mbox{
-        display: none;
-    }
+
+.Mbox{
+    display: none;
+}
     
 .section05 .box{
     height: 60vh;
@@ -1275,10 +1278,16 @@ height: 29px;}
 
 @media (max-width: 640px){
     .section02{
-        margin-bottom: 0;
+        margin-bottom: 8rem;
     }
     .section02 ul{
         width: 100%;
+    }
+    .section03{
+        padding-bottom: 9rem;
+    }
+    .section04{
+        padding-bottom: 10rem;
     }
     .Mbox{
         display: block;

@@ -1,3 +1,9 @@
+$(document).ready(function(){
+   $(".slide").bxSlider({
+      auto: true
+   });
+});
+
 function change1(seg){
    let tap = $(".bbt"+seg);
    $(tap).css({backgroundColor : '#ffda55',height : '80px', marginTop : "0", color:"#fff", fontSize: "170%"});
@@ -64,24 +70,3 @@ function tap03(seg){
   
     
 }  
-
-
-		$(document).ready(function(){
-			$(".M_toggle").click(function(){
-				$(".M_nav").toggleClass("open");
-			});
-		});
-
-
-$(document).ready(function(){
-   pcNav();
-   mNav();
-   // 화면 너비가 768px보다 커지면 m_nav 사라짐
-   $(window).resize(function(){
-     let width = window.outerWidth;
-     if(width >= 768){
-       m_nav.css({right: "-"+100+"%"});
-     }
-   })
-   
- })

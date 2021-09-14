@@ -1,26 +1,37 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>MOJITO BAR IN OCEAN</title>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <link rel="stylesheet" href="style/style.css">
-      <link rel="stylesheet" href="style/common.css">
-      <link rel="stylesheet" href="bxslider/dist/jquery.bxslider.css">
-      <script src="bxslider/dist/jquery.bxslider.min.js"></script>
-      <script src="script/script.js"></script>
-    <script>
-		$(document).ready(function(){
-			$(".slide").bxSlider({
-				auto: true
-			});
-		});
-	</script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style/common.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="bxslider/dist/jquery.bxslider.css">
+  <script src="script/script.js"></script>
+  <script src="script/scroll.js"></script>
+  <script src="bxslider/dist/jquery.bxslider.min.js"></script>
 </head>
 <body>
    
    <div id="wrap">
-       
+    <div class="overlay-navigation">
+        <nav role="navigation">
+          <ul>
+            <li><a href="#aa">MAIN</a></li>
+            <li><a href="#bb">ABOUT</a></li>
+            <li><a href="#cc">STORY</a></li>
+            <li><a href="#dd">MENU</a></li>
+            <li><a href="#ee">STORE</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="open-overlay">
+        <span class="bar-top"></span>
+        <span class="bar-middle"></span>
+        <span class="bar-bottom"></span>
+      </div>
       <div id="navi" class="wh">
          <h1>
              <a href="#aa"><img src="img/logo.png" alt=""></a>
@@ -37,9 +48,7 @@
              <li><a href="#" class="link2">insta</a></li>
              <li><a href="#" class="link3">twitter</a></li>
          </ul>
-         <div class="M_toggle"><img src="/img/menu-btn.svg" alt=""></div> 
       </div>
-      
       <div id="main">
          <div id="content">
             <div class="section01 wh" id="aa">
@@ -506,8 +515,42 @@
        
    </div>
    
-    <script src="script/scroll.js"></script>
-   
-    
+   <script>
+    let overlay_navigation = $('.overlay-navigation'),
+    top_bar = $('.bar-top'),
+    middle_bar = $('.bar-middle'),
+    bottom_bar = $('.bar-bottom'),
+    m_nav_li_a = $('nav li a');
+
+    $('.open-overlay').click(function() {
+         overlay_navigation.toggleClass('overlay-active');
+         if (overlay_navigation.hasClass('overlay-active')) {
+           top_bar.removeClass('animate-out-top-bar').addClass('animate-top-bar');
+           middle_bar.removeClass('animate-out-middle-bar').addClass('animate-middle-bar');
+           bottom_bar.removeClass('animate-out-bottom-bar').addClass('animate-bottom-bar');
+           overlay_navigation.removeClass('overlay-slide-up').addClass('overlay-slide-down');
+         } else {
+           top_bar.removeClass('animate-top-bar').addClass('animate-out-top-bar');
+           middle_bar.removeClass('animate-middle-bar').addClass('animate-out-middle-bar');
+           bottom_bar.removeClass('animate-bottom-bar').addClass('animate-out-bottom-bar');
+           overlay_navigation.removeClass('overlay-slide-down').addClass('overlay-slide-up');
+         }
+    });
+    $(m_nav_li_a).click(function(){
+        overlay_navigation.toggleClass('overlay-active');
+         if (overlay_navigation.hasClass('overlay-active')) {
+           top_bar.removeClass('animate-out-top-bar').addClass('animate-top-bar');
+           middle_bar.removeClass('animate-out-middle-bar').addClass('animate-middle-bar');
+           bottom_bar.removeClass('animate-out-bottom-bar').addClass('animate-bottom-bar');
+           overlay_navigation.removeClass('overlay-slide-up').addClass('overlay-slide-down');
+         } else {
+           top_bar.removeClass('animate-top-bar').addClass('animate-out-top-bar');
+           middle_bar.removeClass('animate-middle-bar').addClass('animate-out-middle-bar');
+           bottom_bar.removeClass('animate-bottom-bar').addClass('animate-out-bottom-bar');
+           overlay_navigation.removeClass('overlay-slide-down').addClass('overlay-slide-up');
+         }
+    })
+  </script>
+
 </body>
 </html>

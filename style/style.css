@@ -34,7 +34,7 @@
 #navi .menu li{
 	padding: 30px 0;
 	color: #fff;
-	font-size: 1rem;
+	font-size: 1.3rem;
 	letter-spacing: 8px;
 	font-weight: bold;
 }
@@ -732,7 +732,7 @@
     float: left;
 	width: 1px;
     margin-top: 1%;
-    margin-left: 2.5%;
+    margin-left: 2%;
 	height: 12vh;
 	background: #ccc;
 }
@@ -773,7 +773,7 @@
 .box_list04 li span{
 	display: block;
 	width: 1px;
-	height: 24vh;
+	height: 27vh;
 	background: #ccc;
     margin-left: 50%;
     margin-top: 50%;
@@ -800,7 +800,7 @@
     overflow: hidden;
 }
 .section05 .store{
-	width: 70%;
+	width: 45vw;
 	float: left;
 	position: relative;
 }
@@ -1047,11 +1047,14 @@ height: 29px;}
     
 #main #content>div{}
 
+.section01{
+    margin-bottom: 0;
+}
     .section01 ul{
-        height: 100vh;
+        height: auto;
     }
     .section01 ul li img{
-        height: 95vh;
+        height: auto;
     }
     
     
@@ -1150,6 +1153,7 @@ height: 29px;}
 }
 .section03 .right .text p{
     margin-left: 5%;
+    padding-right: 1rem;
 }
 .section03 .left .text{
     width: 50%;
@@ -1159,6 +1163,7 @@ height: 29px;}
 }
 .section03 .left .text p{
     margin-right: 6%;
+    padding-left: 1rem;
 }
 
     
@@ -1173,14 +1178,28 @@ height: 29px;}
 	letter-spacing: 10px;
 	margin-bottom: 40px;
 }
+.box_list03 .sauce span{
+	display: block;
+    float: left;
+	width: 1px;
+    margin-top: 1%;
+    margin-left: 2%;
+	height: 70px;
+	background: #ccc;
+}
 .box_list04 li span{
     transition: all .4s;
+    height: 150px;
 	display: block;
 	width: 1px;
 	background: #ccc;
     margin-left: 50%;
     margin-top: 50%;
 }
+
+
+
+
 }
 
 
@@ -1210,18 +1229,18 @@ height: 29px;}
 }
     
 #main{
-    margin-top: 50px;
+    margin-top: 60px;
     float: none;
     width: 100%;
 }
 
 .section01{
-    margin-bottom: 10rem;
+    padding-bottom: 10rem;
 }
 .section01 ul{
 }
 .section01 ul li{
-	height:90vh;
+	height: 90vh;
 }
 .section01 ul li img{
     width: 100%;
@@ -1251,15 +1270,18 @@ height: 29px;}
     
 .section04{
     height: 100%;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
 }
 
 .Mbox{
     display: none;
 }
     
+.section05{
+    padding-bottom: 5rem;
+}
 .section05 .box{
-    height: 60vh;
+    height: 40vh;
 }
 .section05 .store li{
 	position: absolute;
@@ -1278,13 +1300,75 @@ height: 29px;}
 
 @media (max-width: 640px){
     .section02{
-        margin-bottom: 8rem;
+        margin-bottom: 15rem;
     }
     .section02 ul{
         width: 100%;
     }
+    .section02 .title{
+    }
+    .section02 .title p{
+        line-height: 1.8;
+        padding-bottom: 2rem;
+    }
+    .section02 .title p:last-child{
+      padding-bottom: 3rem;
+    }
+    .section02 .list{
+        overflow: hidden;
+        position: relative;
+        margin: auto 0;
+    }
+    .section02 .list li{
+        width: 100%;
+        float: left;
+        position: relative;
+        overflow: hidden;
+        height: 350px;
+    }
+    .section02 .list li:first-child{
+        margin-left: 0;
+    }
+    .section02 .list li img{
+      display: block;
+      width: 100%;
+    }
+    .section02 .list li span{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .section02 .list .list01{}
+    .section02 .list .rotate01{
+        transition: all 0.5s;
+        z-index: 2;
+        opacity: 1;
+    }
+    .section02 .list .rotate02{
+        transition: all 0.5s;
+        opacity: 0;
+        transform: rotateY(180deg)}
+    .section02 .list li:hover .rotate01{
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+    .section02 .list li:hover .rotate02{
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+    .section02 .text{
+        padding-top: 5rem;
+        font-size: 1.5rem;
+        line-height: 1.8;
+        color: #fff;
+    }
+    .subject{
+      background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-animation: hue 10s infinite linear;
+    }
     .section03{
-        padding-bottom: 9rem;
     }
     .section04{
         padding-bottom: 10rem;
@@ -1336,7 +1420,7 @@ height: 29px;}
         }
         .item .name{
             float: left;
-            width: 74%;
+            width: 71%;
         }
         .item .name p:first-child{
             font-family: 'Gmarketsansmedium';
@@ -1348,7 +1432,7 @@ height: 29px;}
         .item .price{
             float: right;
             text-align: right;
-            width: 25%;
+            width: 28%;
             position: relative;
         }
         .Mchips .item .price span{
@@ -1392,7 +1476,6 @@ height: 29px;}
     }
     .section04 .Mbox{
         display: block;
-        margin-bottom: 10rem;
         text-align: justify;
     }
     .section05 .list{
@@ -1404,3 +1487,6 @@ height: 29px;}
     }
 }
 
+@media (max-width: 380px){
+
+}

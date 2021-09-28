@@ -800,7 +800,7 @@
     overflow: hidden;
 }
 .section05 .store{
-	width: 45vw;
+	width: 70%;
 	float: left;
 	position: relative;
 }
@@ -1281,15 +1281,18 @@ height: 29px;}
     padding-bottom: 5rem;
 }
 .section05 .box{
-    height: 40vh;
+    height: 45vh;
 }
 .section05 .store li{
 	position: absolute;
 	left: 0;
 	top: 0;
-    height: 60vh;
+    height: 50vh;
 	overflow: hidden;
 	width: 100%;
+}
+.section05 .store li img{
+    width: 100%;
 }
     
 .sticky{
@@ -1485,8 +1488,4 @@ height: 29px;}
         display: block;
         text-align: justify;
     }
-}
-
-@media (max-width: 380px){
-
 }

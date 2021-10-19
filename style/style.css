@@ -25,6 +25,9 @@
 #navi h1{
 	padding: 3rem;
 }
+#navi h1 a{
+    display: block;
+}
 #navi h1 a img{
     width: 100%;
 }
@@ -625,6 +628,7 @@
 
 .section04{
     margin: 0 auto 18rem;
+    min-height: auto;
 }
 .section04 .list{
 	position: relative;
@@ -1042,8 +1046,10 @@ height: 29px;}
     min-height: 0;
     margin-bottom: 20rem;
 }
+#main #content>.section04{
+    min-height: 90vh;
+}
 #main #content>div:last-child{
-    padding-top: 35rem;
     min-height: 60rem;
     margin-bottom: 5rem;
 }
@@ -1226,11 +1232,17 @@ height: 29px;}
 
 
 #main{
-    margin-top: 60px;
+    padding-top: 60px;
     float: none;
     width: 100%;
 }
 
+#main #content>div{
+    padding-top: 3rem;
+}
+#main #content>.section01{
+    padding-top: 0;
+}
 
 .section01 ul{
 }

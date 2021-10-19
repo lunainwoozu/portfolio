@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MOJITO BAR IN OCEAN</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="style/common.css">
@@ -424,8 +423,8 @@
                           	<p>부산 해운대구 센텀남로 53, B1F</p>
                           </button>
                           <button onclick="tap01(3)" class="tapb3">
-														<h4>신세계백화점 죽전점</h4>
-														<p>경기 용인시 수지구 포은대로 536, 7F</p>
+							<h4>신세계백화점 죽전점</h4>
+							<p>경기 용인시 수지구 포은대로 536, 7F</p>
                          </button>                           
                           </div>
                       </div>
@@ -437,8 +436,8 @@
                           </div>
                           <div class="stap">
                           <button onclick="tap02(1)" class="tapb1">
-														<h4>롯데백화점 서면점</h4>
-														<p>부산 부산진구 가야대로 772, B2F</p>
+							<h4>롯데백화점 서면점</h4>
+							<p>부산 부산진구 가야대로 772, B2F</p>
                          	</button>                         
                           </div>
                       </div>
@@ -512,45 +511,6 @@
     <div class="bubble"></div>
   </div>
 </section>
-       
    </div>
-   
-   <script>
-    let overlay_navigation = $('.overlay-navigation'),
-    top_bar = $('.bar-top'),
-    middle_bar = $('.bar-middle'),
-    bottom_bar = $('.bar-bottom'),
-    m_nav_li_a = $('nav li a');
-
-    $('.open-overlay').click(function() {
-         overlay_navigation.toggleClass('overlay-active');
-         if (overlay_navigation.hasClass('overlay-active')) {
-           top_bar.removeClass('animate-out-top-bar').addClass('animate-top-bar');
-           middle_bar.removeClass('animate-out-middle-bar').addClass('animate-middle-bar');
-           bottom_bar.removeClass('animate-out-bottom-bar').addClass('animate-bottom-bar');
-           overlay_navigation.removeClass('overlay-slide-up').addClass('overlay-slide-down');
-         } else {
-           top_bar.removeClass('animate-top-bar').addClass('animate-out-top-bar');
-           middle_bar.removeClass('animate-middle-bar').addClass('animate-out-middle-bar');
-           bottom_bar.removeClass('animate-bottom-bar').addClass('animate-out-bottom-bar');
-           overlay_navigation.removeClass('overlay-slide-down').addClass('overlay-slide-up');
-         }
-    });
-    $(m_nav_li_a).click(function(){
-        overlay_navigation.toggleClass('overlay-active');
-         if (overlay_navigation.hasClass('overlay-active')) {
-           top_bar.removeClass('animate-out-top-bar').addClass('animate-top-bar');
-           middle_bar.removeClass('animate-out-middle-bar').addClass('animate-middle-bar');
-           bottom_bar.removeClass('animate-out-bottom-bar').addClass('animate-bottom-bar');
-           overlay_navigation.removeClass('overlay-slide-up').addClass('overlay-slide-down');
-         } else {
-           top_bar.removeClass('animate-top-bar').addClass('animate-out-top-bar');
-           middle_bar.removeClass('animate-middle-bar').addClass('animate-out-middle-bar');
-           bottom_bar.removeClass('animate-bottom-bar').addClass('animate-out-bottom-bar');
-           overlay_navigation.removeClass('overlay-slide-down').addClass('overlay-slide-up');
-         }
-    })
-  </script>
-
 </body>
 </html>

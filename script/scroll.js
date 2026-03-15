@@ -1,3 +1,4 @@
+'use strict';
 $(document).ready(function() {
     let scroll = {
         offset: 0,
@@ -64,7 +65,7 @@ $(document).ready(function(){
     $(".wh")=window.height();
 });
 
- $(window).scroll(function(){
+$(window).scroll(function(){
  let $window = $(window),
  $slider = $('.back_slider');
    
@@ -115,3 +116,4 @@ if (matchMedia("screen and (max-width: 640px)").matches) { if(scroll > 25){
  }
    
 });
+

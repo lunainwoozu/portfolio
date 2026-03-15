@@ -38,10 +38,9 @@ $(document).ready(function() {
         },
 
         onScroll: function(e) {
-            let that = this;
-            for (i = that.offsets.length; i--;) {
-                that.checkScroll( that.offsets[i], that.targets[i], "show");
-            }
+            this.targets.each((i, $el) => {
+                this.checkScroll(this.offsets[i], $el, "show");
+            });
         },
 
         checkScroll: function( limit, $el, className ) {
@@ -61,7 +60,6 @@ $(document).ready(function() {
 
         
 $(document).ready(function(){
-    wh=$(window).height();
     $(".wh")=window.height();
 });
 
